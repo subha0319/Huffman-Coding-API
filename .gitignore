@@ -12,7 +12,7 @@ Thumbs.db
 
 ### Java / Maven ###
 target/
-.mvn/
+###.mvn/
 *.jar
 *.war
 
