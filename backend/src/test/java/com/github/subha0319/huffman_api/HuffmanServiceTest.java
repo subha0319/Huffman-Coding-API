@@ -78,9 +78,11 @@ class HuffmanServiceTest {
         assertEquals("", decompressedText);
     }
 }
-```
 
-/* How to Run the Tests:
+
+/* 
+```
+How to Run the Tests:
 
 1.  Make sure your backend server is **stopped** if it's currently running.
 2.  In the terminal window that is in your `backend` directory, run the following command:
