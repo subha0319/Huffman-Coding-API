@@ -67,9 +67,10 @@ class HuffmanServiceTest {
         
         String decompressedText = huffmanService.decompress(invalidEncodedText, result.codeTable());
         
-        // The decompression should stop when it can't find a match.
-        // It should decompress the valid part of the string.
-        assertTrue(text.startsWith(decompressedText));
+        // The decompression should decode the valid part of the string, and may decode
+        // extra characters if the "invalid" suffix contains valid code prefixes.
+        // We assert that the result STARTS WITH the original text.
+        assertTrue(decompressedText.startsWith(text));
     }
 
     @Test
