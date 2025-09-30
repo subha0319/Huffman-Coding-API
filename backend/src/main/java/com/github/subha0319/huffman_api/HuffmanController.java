@@ -33,7 +33,8 @@ record DecompressionResponse(String text) {}
  */
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000") // Allow requests from our React app
+// @CrossOrigin(origins = "http://localhost:3000") // Allow requests from our React app
+@CrossOrigin(origins = "*")
 public class HuffmanController {
 
     private final HuffmanService huffmanService;
