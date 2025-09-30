@@ -14,8 +14,11 @@ function App() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  // API endpoint base URL
-  const API_URL = 'http://localhost:8080/api';
+  // API endpoint base URL for local development
+  //const API_URL = 'http://localhost:8080/api';
+
+  // API endpoint base URL for deployed backend
+  const API_URL = 'https://huffman-coding-api.onrender.com/api';
 
   /**
    * Handles the compression request.
