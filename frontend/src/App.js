@@ -131,6 +131,7 @@ function App() {
       <header className="App-header">
         <h1>Huffman Coding Visualizer</h1>
         <p>A tool to demonstrate lossless text compression.</p>
+        <p>This is a free hosting instance may spin down due to inactivity, causing a slight delay of up to 50 seconds.</p>
       </header>
       <main className="container">
         <div className="io-grid">
